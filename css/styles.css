@@ -724,8 +724,6 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 1;
-  visibility: visible;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -740,10 +738,27 @@ footer {
 
 .modal {
   position: absolute;
+  display: flex;
+  justify-content: end;
   width: 528px;
   height: 581px;
   background-color: var(--main-background);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-icon {
+  fill: var(--logotype-second-color);
 }
